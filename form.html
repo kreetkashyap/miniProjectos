@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <div class="formContainer">
+        <h3>Form!</h3>
+    <form id="myForm">
+        <input type="text" name="name" placeholder="Enter your name">
+        <br><br>
+        <input type="email" name="email" placeholder="Enter your email">
+        <br><br>
+        <input type="number" name="number" placeholder="Enter your number">
+        <br><br>
+        <input type="number" name="roll" placeholder="Enter your roll">
+        <br><br>
+        <p>do you have a job?</p>
+        <input type="radio" name="job" value="yes"> Yes
+        <input type="radio" name="job" value="no"> No
+        <br>
+        <p>I agree to the terms and condition</p>
+        <input type="checkbox" name="T&C">
+        <br>
+        <br>
+        <button id="sub-btn" type="submit">Submit</button>
+    </form>
+        </div>
+        <button id="toggle-btn">Show Data</button>
+
+        <div class="result-container none">
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+
+        </div>
+    </div>
+
+    <script src="form.js"></script>
+</body>
+</html>
