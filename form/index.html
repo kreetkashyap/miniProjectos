@@ -4,34 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
-    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
+        <!-- Form Container -->
         <div class="formContainer">
-        <h3>Form!</h3>
-    <form id="myForm">
-        <input type="text" name="name" placeholder="Enter your name">
-        <br><br>
-        <input type="email" name="email" placeholder="Enter your email">
-        <br><br>
-        <input type="number" name="number" placeholder="Enter your number">
-        <br><br>
-        <input type="number" name="roll" placeholder="Enter your roll">
-        <br><br>
-        <p>do you have a job?</p>
-        <input type="radio" name="job" value="yes"> Yes
-        <input type="radio" name="job" value="no"> No
-        <br>
-        <p>I agree to the terms and condition</p>
-        <input type="checkbox" name="T&C">
-        <br>
-        <br>
-        <button id="sub-btn" type="submit">Submit</button>
-    </form>
+            <h3>Form!</h3>
+            <form id="myForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <label for="number">Number:</label>
+                <input type="number" id="number" name="number" placeholder="Enter your number" required>
+                
+                <label for="roll">Roll:</label>
+                <input type="number" id="roll" name="roll" placeholder="Enter your roll" required>
+
+                <fieldset>
+                    <legend>Do you have a job?</legend>
+                    <label>
+                        <input type="radio" name="job" value="yes" required> Yes
+                    </label>
+                    <label>
+                        <input type="radio" name="job" value="no"> No
+                    </label>
+                </fieldset>
+
+                <label>
+                    <input type="checkbox" name="T&C" required> I agree to the terms and conditions
+                </label>
+
+                <button id="sub-btn" type="submit">Submit</button>
+            </form>
         </div>
+
+        <!-- Toggle button -->
         <button id="toggle-btn">Show Data</button>
 
+        <!-- Result container -->
         <div class="result-container none">
             <p></p>
             <p></p>
@@ -39,10 +53,17 @@
             <p></p>
             <p></p>
             <p></p>
+        </div>
 
+        <!-- Popup -->
+        <div id="popup" class="popup none">
+            <div class="popup-content">
+                <span id="closePopup" class="close">&times;</span>
+                <p id="popupMsg">Form submitted successfully!</p>
+            </div>
         </div>
     </div>
 
-    <script src="form.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,6 +1,9 @@
 // Form section
 let form = document.getElementById('myForm');
 const key = ['name','email','number','roll','job', 'T&C'];
+const popup = document.getElementById('popup');
+const closePopup = document.getElementById('closePopup');
+const popupMsg = document.getElementById('popupMsg');
 
 
 
@@ -15,13 +18,29 @@ form.addEventListener('submit', (e)=>{
             data[item] = e.target[item].value;
         }
     }
-    alert("Form submitted");
+    // alert("Form submitted");
+   
     localStorage.setItem("userData" , JSON.stringify(data));
-    console.log("Saved:", data);
+   
 
+    // Reset form fields
+    form.reset();
     
+     // Show popup
+     popupMsg.textContent = "Form submitted successfully!";
+     popup.classList.remove('hidden');
 })
+// Close popup on click
+closePopup.addEventListener('click', () => {
+    popup.classList.add('hidden');
+});
 
+// Optional: close popup if clicked outside content
+popup.addEventListener('click', (e) => {
+    if(e.target === popup){
+        popup.classList.add('hidden');
+    }
+});
 
 
 // Display section
