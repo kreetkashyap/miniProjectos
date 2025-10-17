@@ -5,6 +5,8 @@ const popup = document.getElementById('popup');
 const closePopup = document.getElementById('closePopup');
 const popupMsg = document.getElementById('popupMsg');
 
+
+
 // Ensure popup does NOT show when refreshing the browser without submitting the form
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -53,7 +55,6 @@ const toggBtn = document.getElementById('toggle-btn')
 const formContainer = document.querySelector('.formContainer')
 const resultContainer = document.querySelector('.result-container')
 const userPara = document.querySelectorAll('.result-container > p');
-console.log(userPara);
 let toggState = true;
 
 
@@ -84,3 +85,9 @@ function loadData(){
     userPara[4].textContent =   `Job : ${data?.job}`
     userPara[5].textContent =   `T&C : ${data?.['T&C']}`
 }
+
+const resetBtn = document.getElementById('reset-btn');
+resetBtn.addEventListener('click', () => {
+    form.reset();          // Reset all form fields
+    popup.classList.add('hidden');  // Hide popup if open
+});
