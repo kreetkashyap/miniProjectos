@@ -5,7 +5,11 @@ const popup = document.getElementById('popup');
 const closePopup = document.getElementById('closePopup');
 const popupMsg = document.getElementById('popupMsg');
 
+// Ensure popup does NOT show when refreshing the browser without submitting the form
 
+window.addEventListener('DOMContentLoaded', () => {
+    popup.classList.add('hidden');
+});
 
 form.addEventListener('submit', (e)=>{
     e.preventDefault();
@@ -72,7 +76,8 @@ toggBtn.addEventListener('click', ()=>{
 
 function loadData(){
     const data = JSON.parse(localStorage.getItem('userData'));
-    userPara[0].textContent = `Name : ${data?.name}`;
+    // userPara[0].textContent = `Name : ${data?.name}`;
+    userPara[0].textContent = `Name : ${data?.name || '-'}`;
     userPara[1].textContent = `Email : ${data?.email}`
     userPara[2].textContent =  `Roll : ${data?.roll}`
     userPara[3].textContent =  `Number : ${data?.number}`
