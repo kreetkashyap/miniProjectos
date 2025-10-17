@@ -22,8 +22,7 @@ form.addEventListener('submit', (e)=>{
     
 })
 
-// TODO style the form, center in the display
-// TODO add css class to hide/show the form once the data is filled the form should dissapear and a result block wil come with a buton to dife hide the result block and form would appear with empty feilds
+
 
 // Display section
 
