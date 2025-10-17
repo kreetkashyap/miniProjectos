@@ -24,14 +24,14 @@ Each project focuses on a specific concept — perfect for learning, practice, a
 - [License](#license)
 
 ---
-
+<a id="overview"></a>
 ## 💡 Overview
 
 This repository contains a series of **mini web apps** created as part of a personal learning journey in front-end development.  
 Every project runs directly in the browser — no installations, frameworks, or build tools needed.
 
 ---
-
+<a id="projects"></a>
 ## 🧩 Projects
 
 | # | Project Name | Description |
@@ -46,7 +46,7 @@ Every project runs directly in the browser — no installations, frameworks, or 
 | 8️⃣ | **Drag and Drop** | Demonstrates HTML5 drag-and-drop interaction between elements. |
 
 ---
-
+<a id="tech-stack"></a>
 ## 🛠️ Tech Stack
 
 - **HTML5** → structure  
@@ -57,6 +57,7 @@ Built completely from scratch — **no frameworks, no libraries, no dependencies
 
 ---
 
+<a id="getting-started"></a>
 ## 🚀 Getting Started
 
 You can run any project locally in just a few seconds:
@@ -77,7 +78,7 @@ cd miniProjectos/Digital-Clock
 
 - Double-click `index.html` file in the project folder to open it in your browser. 🎉
 
-
+<a id="future-additions"></a>
 ## 🌱 Future Additions
 
 More projects coming soon:
@@ -88,6 +89,7 @@ More projects coming soon:
 - 🧠 Memory Game
 - 💬 Quote Generator
 
+<a id="author"></a>
 ## 👨‍💻 Author
 
 **Kritika Kashyap**
@@ -97,7 +99,7 @@ More projects coming soon:
 📧 kritikakashyap008@gmail.com
 
 > “Building small things consistently leads to big progress.” 🚀
-
+<a id="license"></a>
 ## 📄 License
 
 This repository is licensed under the **MIT License**.  
