@@ -102,5 +102,6 @@ More projects coming soon:
 <a id="license"></a>
 ## 📄 License
 
-This repository is licensed under the **MIT License**.  
+This repository is licensed under the [MIT License](./LICENSE).
+
 You’re free to use, modify, and share it — just give proper credit.
